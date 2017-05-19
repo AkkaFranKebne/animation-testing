@@ -1,2 +1,2 @@
 # animation-testing
-practising scss and jquery animation
+Practising scss and jquery animation.

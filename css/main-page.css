@@ -1,0 +1,91 @@
+/* line 2, scss/main-page.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, scss/main-page.scss */
+.container {
+  height: 440px;
+  width: 440px;
+  padding: 15px;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+/* line 18, scss/main-page.scss */
+.container .element {
+  border: 5px;
+  height: 200px;
+  width: 200px;
+  background-color: cadetblue;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* line 26, scss/main-page.scss */
+.container .element a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 31, scss/main-page.scss */
+.container .element#el-1 {
+  background-image: url("../images/pic-1_thumbnail.jpg");
+}
+
+/* line 34, scss/main-page.scss */
+.container .element#el-2 {
+  background-image: url("../images/pic-2_thumbnail.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 40, scss/main-page.scss */
+.container .element#el-3 {
+  background-image: url("../images/pic-3_thumbnail.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 46, scss/main-page.scss */
+.container .element#el-4 {
+  background-image: url("../images/pic-4_thumbnail.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 53, scss/main-page.scss */
+.container .transition {
+  z-index: 99;
+  opacity: 1;
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -o-transform: scale(10);
+  transform: scale(10);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+}
+
+/* line 67, scss/main-page.scss */
+a {
+  font-size: 16px;
+}
+
+/* co ma sie dziac:
+ - powiekszany obrazek ma byc na wierzchu
+- ma otwierac sie w  okreslonych wymiarach  (wypelnic soba caly ekran?)
+- zmiana rozdzielczosci obrazka przy kliku, aby nie bylo pikseliozt
+- obrazek jako tlo strony docelowej (plynne przejscie  - powinien byc dokladnie ten, ktory sie skonczyl animowac)
+- efekt zoom in mapy - czy uzyskany?
+
+*/
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi1wYWdlLmNzcyIsInNvdXJjZXMiOlsibWFpbi1wYWdlLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiXG4qIHtcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgIG1hcmdpbjogMDtcbiAgICBwYWRkaW5nOiAwO1xuICAgIC8vZm9udC1zaXplOiAwO1xuICAgXG59XG5cblxuLmNvbnRhaW5lciB7XG4gICAgLy9ib3JkZXI6IDFweCBzb2xpZCByZWQ7XG4gICAgaGVpZ2h0OiA0NDBweDtcbiAgICB3aWR0aDogNDQwcHg7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICBtYXJnaW4tbGVmdDogNDAwcHg7XG4gICAgbWFyZ2luLXRvcDogMTAwcHg7XG4gICAgICAuZWxlbWVudCB7XG4gICAgICAgIGJvcmRlcjogNXB4O1xuICAgICAgICBoZWlnaHQ6IDIwMHB4O1xuICAgICAgICB3aWR0aDogMjAwcHg7XG4gICAgICAgICAgLy9ib3JkZXI6IDFweCBzb2xpZCBibHVlO1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBjYWRldGJsdWU7XG4gICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgb3BhY2l0eTowLjU7XG4gICAgICAgICAgYSB7XG4gICAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgIH1cbiAgICAgICAgICAmI2VsLTEge1xuICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIuLi9pbWFnZXMvcGljLTFfdGh1bWJuYWlsLmpwZ1wiKTtcbiAgICAgICAgICB9XG4gICAgICAgICAgJiNlbC0yIHtcbiAgICAgICAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiLi4vaW1hZ2VzL3BpYy0yX3RodW1ibmFpbC5qcGdcIik7XG4gICAgICAgICAgICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICAgICAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgXG4gICAgICAgICAgfVxuICAgICAgICAgICYjZWwtMyB7XG4gICAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybChcIi4uL2ltYWdlcy9waWMtM190aHVtYm5haWwuanBnXCIpO1xuICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgICAgICAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7IFxuICAgICAgICAgIH1cbiAgICAgICAgICAmI2VsLTQge1xuICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIuLi9pbWFnZXMvcGljLTRfdGh1bWJuYWlsLmpwZ1wiKTtcbiAgICAgICAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OyBcbiAgICAgICAgICB9XG4gICAgfSAgXG4gICAgLnRyYW5zaXRpb24ge1xuICAgIHotaW5kZXg6IDk5O1xuICAgIG9wYWNpdHk6IDE7XG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKDEwKTsgXG4gICAgLW1vei10cmFuc2Zvcm06IHNjYWxlKDEwKTtcbiAgICAtby10cmFuc2Zvcm06IHNjYWxlKDEwKTtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEwKTtcbiAgICAtd2Via2l0LXRyYW5zaXRpb246ICAxcyBlYXNlLWluLW91dDtcbiAgICAtbW96LXRyYW5zaXRpb246ICAxcyBlYXNlLWluLW91dDtcbiAgICAtby10cmFuc2l0aW9uOiAgMXMgZWFzZS1pbi1vdXQ7XG4gICAgLW1zLXRyYW5zaXRpb246ICAxcyBlYXNlLWluLW91dDtcblxufVxufVxuYSB7XG4gICAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4vKiBjbyBtYSBzaWUgZHppYWM6XG4gLSBwb3dpZWtzemFueSBvYnJhemVrIG1hIGJ5YyBuYSB3aWVyemNodVxuLSBtYSBvdHdpZXJhYyBzaWUgdyAgb2tyZXNsb255Y2ggd3ltaWFyYWNoICAod3lwZWxuaWMgc29iYSBjYWx5IGVrcmFuPylcbi0gem1pYW5hIHJvemR6aWVsY3pvc2NpIG9icmF6a2EgcHJ6eSBrbGlrdSwgYWJ5IG5pZSBieWxvIHBpa3NlbGlvenRcbi0gb2JyYXplayBqYWtvIHRsbyBzdHJvbnkgZG9jZWxvd2VqIChwbHlubmUgcHJ6ZWpzY2llICAtIHBvd2luaWVuIGJ5YyBkb2tsYWRuaWUgdGVuLCBrdG9yeSBzaWUgc2tvbmN6eWwgYW5pbW93YWMpXG4tIGVmZWt0IHpvb20gaW4gbWFweSAtIGN6eSB1enlza2FueT9cblxuKi9cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0EsQUFBQSxDQUFDLENBQUM7RUFDRSxVQUFVLEVBQUUsVUFBVTtFQUN0QixNQUFNLEVBQUUsQ0FBQztFQUNULE9BQU8sRUFBRSxDQUFDO0NBR2I7OztBQUdELEFBQUEsVUFBVSxDQUFDO0VBRVAsTUFBTSxFQUFFLEtBQUs7RUFDYixLQUFLLEVBQUUsS0FBSztFQUNaLE9BQU8sRUFBRSxJQUFJO0VBQ2IsV0FBVyxFQUFFLEtBQUs7RUFDbEIsVUFBVSxFQUFFLEtBQUs7Q0FpRHBCOzs7QUF2REQsQUFPTSxVQVBJLENBT0osUUFBUSxDQUFDO0VBQ1AsTUFBTSxFQUFFLEdBQUc7RUFDWCxNQUFNLEVBQUUsS0FBSztFQUNiLEtBQUssRUFBRSxLQUFLO0VBRVosZ0JBQWdCLEVBQUUsU0FBUztFQUMzQixPQUFPLEVBQUUsWUFBWTtFQUNyQixPQUFPLEVBQUMsR0FBRztDQTJCZDs7O0FBekNMLEFBZVUsVUFmQSxDQU9KLFFBQVEsQ0FRSixDQUFDLENBQUM7RUFDRSxPQUFPLEVBQUUsS0FBSztFQUNkLE1BQU0sRUFBRSxJQUFJO0VBQ1osS0FBSyxFQUFFLElBQUk7Q0FDZDs7O0FBbkJYLEFBT00sVUFQSSxDQU9KLFFBQVEsQUFhSixLQUFNLENBQUM7RUFDSCxnQkFBZ0IsRUFBRSxvQ0FBb0M7Q0FDekQ7OztBQXRCWCxBQU9NLFVBUEksQ0FPSixRQUFRLEFBZ0JKLEtBQU0sQ0FBQztFQUNILGdCQUFnQixFQUFFLG9DQUFvQztFQUN0RCxtQkFBbUIsRUFBRSxNQUFNO0VBQzNCLGVBQWUsRUFBRSxLQUFLO0VBQ3RCLGlCQUFpQixFQUFFLFNBQVM7Q0FDL0I7OztBQTVCWCxBQU9NLFVBUEksQ0FPSixRQUFRLEFBc0JKLEtBQU0sQ0FBQztFQUNILGdCQUFnQixFQUFFLG9DQUFvQztFQUN0RCxtQkFBbUIsRUFBRSxNQUFNO0VBQzNCLGVBQWUsRUFBRSxLQUFLO0VBQ3RCLGlCQUFpQixFQUFFLFNBQVM7Q0FDL0I7OztBQWxDWCxBQU9NLFVBUEksQ0FPSixRQUFRLEFBNEJKLEtBQU0sQ0FBQztFQUNILGdCQUFnQixFQUFFLG9DQUFvQztFQUN0RCxtQkFBbUIsRUFBRSxNQUFNO0VBQzNCLGVBQWUsRUFBRSxLQUFLO0VBQ3RCLGlCQUFpQixFQUFFLFNBQVM7Q0FDL0I7OztBQXhDWCxBQTBDSSxVQTFDTSxDQTBDTixXQUFXLENBQUM7RUFDWixPQUFPLEVBQUUsRUFBRTtFQUNYLE9BQU8sRUFBRSxDQUFDO0VBQ1YsaUJBQWlCLEVBQUUsU0FBUztFQUM1QixjQUFjLEVBQUUsU0FBUztFQUN6QixZQUFZLEVBQUUsU0FBUztFQUN2QixTQUFTLEVBQUUsU0FBUztFQUNwQixrQkFBa0IsRUFBRyxjQUFjO0VBQ25DLGVBQWUsRUFBRyxjQUFjO0VBQ2hDLGFBQWEsRUFBRyxjQUFjO0VBQzlCLGNBQWMsRUFBRyxjQUFjO0NBRWxDOzs7QUFFRCxBQUFBLENBQUMsQ0FBQztFQUNFLFNBQVMsRUFBRSxJQUFJO0NBQ2xCOztBQUVEOzs7Ozs7O0VBT0UifQ== */

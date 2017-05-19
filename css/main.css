@@ -1,0 +1,63 @@
+/* line 2, scss/main.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+/* line 11, scss/main.scss */
+.container {
+  height: 440px;
+  width: 440px;
+  padding: 15px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+/* line 18, scss/main.scss */
+.container .element {
+  height: 200px;
+  width: 200px;
+  background-color: cadetblue;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* line 25, scss/main.scss */
+.container .element a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 31, scss/main.scss */
+.container .transition {
+  opacity: 1;
+  -webkit-transform: scale(15);
+  -moz-transform: scale(15);
+  -o-transform: scale(15);
+  transform: scale(15);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+}
+
+/* line 44, scss/main.scss */
+a {
+  font-size: 16px;
+}
+
+/* co ma sie dziac:
+ - mouseover: poruszenie i zmiana koloru
+- na poczatek na stronie: poruszenie sie raz, pokazanie, ze umiem
+ - click: powiekszenie na caly ekran, potem przejscie do nowej strony
+ - tlo: obrazek. 
+- zmiana rozdzielczosci obrazka przy kliku
+- obrazek jako tlo strony docelowej 
+- efekt zoom in mapy
+
+*/
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJcbioge1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgbWFyZ2luOiAwO1xuICAgIHBhZGRpbmc6IDA7XG4gICAgZm9udC1zaXplOiAwO1xuICAgXG59XG5cblxuLmNvbnRhaW5lciB7XG4gICAgLy9ib3JkZXI6IDFweCBzb2xpZCByZWQ7XG4gICAgaGVpZ2h0OiA0NDBweDtcbiAgICB3aWR0aDogNDQwcHg7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICBtYXJnaW4tbGVmdDogMTAwcHg7XG4gICAgbWFyZ2luLXRvcDogMTAwcHg7XG4gICAgICAuZWxlbWVudCB7XG4gICAgICAgIGhlaWdodDogMjAwcHg7XG4gICAgICAgIHdpZHRoOiAyMDBweDtcbiAgICAgICAgICAvL2JvcmRlcjogMXB4IHNvbGlkIGJsdWU7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IGNhZGV0Ymx1ZTtcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgICAgICBvcGFjaXR5OjAuNTtcbiAgICAgICAgICBhIHtcbiAgICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICAgIGhlaWdodDogMTAwJTtcbiAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgfVxuICAgIH0gIFxuICAgIC50cmFuc2l0aW9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgxNSk7IFxuICAgIC1tb3otdHJhbnNmb3JtOiBzY2FsZSgxNSk7XG4gICAgLW8tdHJhbnNmb3JtOiBzY2FsZSgxNSk7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxNSk7XG4gICAgLXdlYmtpdC10cmFuc2l0aW9uOiAgMXMgZWFzZS1pbi1vdXQ7XG4gICAgLW1vei10cmFuc2l0aW9uOiAgMXMgZWFzZS1pbi1vdXQ7XG4gICAgLW8tdHJhbnNpdGlvbjogIDFzIGVhc2UtaW4tb3V0O1xuICAgIC1tcy10cmFuc2l0aW9uOiAgMXMgZWFzZS1pbi1vdXQ7XG5cbn1cbn1cbmEge1xuICAgIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLyogY28gbWEgc2llIGR6aWFjOlxuIC0gbW91c2VvdmVyOiBwb3J1c3plbmllIGkgem1pYW5hIGtvbG9ydVxuLSBuYSBwb2N6YXRlayBuYSBzdHJvbmllOiBwb3J1c3plbmllIHNpZSByYXosIHBva2F6YW5pZSwgemUgdW1pZW1cbiAtIGNsaWNrOiBwb3dpZWtzemVuaWUgbmEgY2FseSBla3JhbiwgcG90ZW0gcHJ6ZWpzY2llIGRvIG5vd2VqIHN0cm9ueVxuIC0gdGxvOiBvYnJhemVrLiBcbi0gem1pYW5hIHJvemR6aWVsY3pvc2NpIG9icmF6a2EgcHJ6eSBrbGlrdVxuLSBvYnJhemVrIGpha28gdGxvIHN0cm9ueSBkb2NlbG93ZWogXG4tIGVmZWt0IHpvb20gaW4gbWFweVxuXG4qL1xuXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBLEFBQUEsQ0FBQyxDQUFDO0VBQ0UsVUFBVSxFQUFFLFVBQVU7RUFDdEIsTUFBTSxFQUFFLENBQUM7RUFDVCxPQUFPLEVBQUUsQ0FBQztFQUNWLFNBQVMsRUFBRSxDQUFDO0NBRWY7OztBQUdELEFBQUEsVUFBVSxDQUFDO0VBRVAsTUFBTSxFQUFFLEtBQUs7RUFDYixLQUFLLEVBQUUsS0FBSztFQUNaLE9BQU8sRUFBRSxJQUFJO0VBQ2IsV0FBVyxFQUFFLEtBQUs7RUFDbEIsVUFBVSxFQUFFLEtBQUs7Q0EwQnBCOzs7QUFoQ0QsQUFPTSxVQVBJLENBT0osUUFBUSxDQUFDO0VBQ1AsTUFBTSxFQUFFLEtBQUs7RUFDYixLQUFLLEVBQUUsS0FBSztFQUVaLGdCQUFnQixFQUFFLFNBQVM7RUFDM0IsT0FBTyxFQUFFLFlBQVk7RUFDckIsT0FBTyxFQUFDLEdBQUc7Q0FNZDs7O0FBbkJMLEFBY1UsVUFkQSxDQU9KLFFBQVEsQ0FPSixDQUFDLENBQUM7RUFDRSxPQUFPLEVBQUUsS0FBSztFQUNkLE1BQU0sRUFBRSxJQUFJO0VBQ1osS0FBSyxFQUFFLElBQUk7Q0FDZDs7O0FBbEJYLEFBb0JJLFVBcEJNLENBb0JOLFdBQVcsQ0FBQztFQUNaLE9BQU8sRUFBRSxDQUFDO0VBQ1YsaUJBQWlCLEVBQUUsU0FBUztFQUM1QixjQUFjLEVBQUUsU0FBUztFQUN6QixZQUFZLEVBQUUsU0FBUztFQUN2QixTQUFTLEVBQUUsU0FBUztFQUNwQixrQkFBa0IsRUFBRyxjQUFjO0VBQ25DLGVBQWUsRUFBRyxjQUFjO0VBQ2hDLGFBQWEsRUFBRyxjQUFjO0VBQzlCLGNBQWMsRUFBRyxjQUFjO0NBRWxDOzs7QUFFRCxBQUFBLENBQUMsQ0FBQztFQUNFLFNBQVMsRUFBRSxJQUFJO0NBQ2xCOztBQUVEOzs7Ozs7Ozs7RUFTRSJ9 */

@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //font-size: 0;
+   
+}
+
+
+.container {
+    //border: 1px solid red;
+    height: 440px;
+    width: 440px;
+    padding: 15px;
+    margin-left: 400px;
+    margin-top: 100px;
+      .element {
+        border: 5px;
+        height: 200px;
+        width: 200px;
+          //border: 1px solid blue;
+        background-color: cadetblue;
+        display: inline-block;
+        opacity:0.5;
+          a {
+              display: block;
+              height: 100%;
+              width: 100%;
+          }
+          &#el-1 {
+              background-image: url("../images/pic-1_thumbnail.jpg");
+          }
+          &#el-2 {
+              background-image: url("../images/pic-2_thumbnail.jpg");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; 
+          }
+          &#el-3 {
+              background-image: url("../images/pic-3_thumbnail.jpg");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; 
+          }
+          &#el-4 {
+              background-image: url("../images/pic-4_thumbnail.jpg");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat; 
+          }
+    }  
+    .transition {
+    z-index: 99;
+    opacity: 1;
+    -webkit-transform: scale(10); 
+    -moz-transform: scale(10);
+    -o-transform: scale(10);
+    transform: scale(10);
+    -webkit-transition:  1s ease-in-out;
+    -moz-transition:  1s ease-in-out;
+    -o-transition:  1s ease-in-out;
+    -ms-transition:  1s ease-in-out;
+
+}
+}
+a {
+    font-size: 16px;
+}
+
+/* co ma sie dziac:
+ - powiekszany obrazek ma byc na wierzchu
+- ma otwierac sie w  okreslonych wymiarach  (wypelnic soba caly ekran?)
+- zmiana rozdzielczosci obrazka przy kliku, aby nie bylo pikseliozt
+- obrazek jako tlo strony docelowej (plynne przejscie  - powinien byc dokladnie ten, ktory sie skonczyl animowac)
+- efekt zoom in mapy - czy uzyskany?
+
+*/
