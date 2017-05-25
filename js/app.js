@@ -55,26 +55,3 @@ $(document).ready(function(){
     
 });
 
-
-
-/*
-
-   elements.on('mouseover', function(){
-        console.log('mysz!');
-    });
-    
-    
-
-        $('.content').on('click', function(){
-        $(this).animate({
-            opacity:0.5,
-            width: '200px',
-            borderRadius: '50%'
-        },{queue: false}, 2000).animate({
-            height: '200px',
-            backgroundColor: '#f45c57'
-        },{queue: false},700);
-        
-    });
-    
-    */

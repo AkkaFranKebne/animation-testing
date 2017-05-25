@@ -1,0 +1,84 @@
+//zablokowac resize strony!!
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background-image: url('../images-island/bekgrant.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    .air {
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 800px;
+        width : 1200px;    
+        img {
+            display: inline-block;
+            &#smok {
+                position: absolute;
+                top: 18%;
+                right: 28%;
+            }
+            &#chmury1 {
+                position: absolute;
+                top: 30%;
+                left: 35%;
+                z-index: 99;
+            }           
+            &#chmury2 {
+                position: absolute;
+                top: 21%;
+                right: 17%;
+                z-index: 99;
+            }
+        }
+    }
+    .island {
+        border: 1px dotted white;
+        position: relative;
+        left: 0;
+        top: -800px;
+        height: 800px;
+        width : 1200px;
+        img {
+            display: inline-block;
+            &#new_biz {
+                position: absolute;
+                top: 32%;
+                left: 20%;
+            }
+            &#eventy {
+                position: absolute;
+                top: 41.8%;
+                right: 16.3%;
+            }           
+            &#ziemia_niczyja {
+                position: absolute;
+                top: 26.4%;
+                right: 16.4%;
+                z-index: -5;
+            }
+            &#sm {
+                position: absolute;
+                top: 32.5%;
+                left: 26.5%;
+            }
+            &#kreacja {
+                position: absolute;
+                top: 28.7%;
+                right: 17.8%;
+            }
+            &#www {
+                position: absolute;
+                top: 18%;
+                right: 22.5%;
+            }
+        }
+        
+    } 
+}

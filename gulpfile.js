@@ -40,6 +40,32 @@ gulp.task("sass-main", function (){
 });
 
 
+gulp.task("sass-island", function (){
+    return gulp.src("scss/main-island.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+        errLogToConsole:true,
+        outputStyle: "expanded",
+        sourceComments: "map"
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("css"))
+});
+
+gulp.task("sass-island-1", function (){
+    return gulp.src("scss/1-island.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+        errLogToConsole:true,
+        outputStyle: "expanded",
+        sourceComments: "map"
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("css"))
+});
+
+
+
 gulp.task("watch", function(){
     gulp.watch(['scss/**/*.scss' ], ['sass']); 
 });
